@@ -1,0 +1,31 @@
+.button {
+  width: 296px;
+  height: 64px;
+  color: #fff;
+  background-color: #FF8B37;
+  font-family: 'Inter';
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 23px;
+  border: none;
+  outline: none;
+  border-radius: 12px;
+  cursor: pointer;
+  transition-duration: 0.2s;
+}
+
+.button:hover {
+  background-color: #FFAC70;
+}
+
+.button:active {
+  background-color: #E87928;
+}
+
+@media (max-width: 479px) {
+  .button {
+    font-size: 14px;
+    width: 90vw;
+    height: 48px;
+  }
+}

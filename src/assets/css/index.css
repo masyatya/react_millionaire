@@ -1,0 +1,40 @@
+body {
+  font-family: 'Inter', sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+h1 {
+  font-size: 56px;
+  font-weight: 600;
+  line-height: 116%;
+  color: #1C1C21;
+}
+
+h2 {
+  font-weight: 600;
+  font-size: 32px;
+  color: #1C1C21;
+}
+
+@media (max-width: 1099px) {
+  h1 {
+    font-size: 44px;
+  }
+
+  h2 {
+    font-size: 24px;
+  }
+}
+
+@media (max-width: 479px) {
+  h1 {
+    font-size: 32px;
+  }
+
+  h2 {
+    font-size: 18px;
+  }
+}

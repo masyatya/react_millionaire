@@ -1,0 +1,131 @@
+.menu {
+  padding: 0 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 26vw;
+  height: 100vh;
+  background-color: #ffffff;
+  overflow: hidden;
+}
+
+.menu__input,
+.menu__label {
+  display: none;
+}
+
+.menu__item {
+  margin: 8px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 45px;
+  width: 230px;
+  position: relative;
+  background-image: url('../assets/images/answer.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.menu__item::before,
+.menu__item::after {
+  width: 100%;
+  border-top: 1px solid #D0D0D8;
+  position: absolute;
+  content: '';
+}
+
+.menu__item::before {
+  right: -100%;
+}
+
+.menu__item::after {
+  left: -100%;
+}
+
+.menu__item--active {
+  background-image: url('../assets/images/answer-hover.png');
+}
+
+.menu__item--active p {
+  color: #FF8B37;
+}
+
+.menu__item--active::before,
+.menu__item--active::after {
+  border-color: #FF8B37;
+}
+
+.menu__item--inactive p {
+  color: #D0D0D8;
+}
+
+.menu__prize {
+  font-size: 20px;
+  line-height: 116%;
+  color: #1C1C21;
+}
+
+@media (max-width: 1099px) {
+  .menu {
+    width: 30vw;
+  }
+}
+
+@media (max-width: 799px) {
+  .menu {
+    position: absolute;
+    right: 5px;
+    align-items: flex-start;
+    width: 0;
+  }
+
+  .menu__list {
+    position: absolute;
+    display: none;
+    opacity: 0;
+    width: 100vw;
+
+  }
+
+  .bar1,
+  .bar2,
+  .bar3 {
+    width: 18px;
+    height: 1px;
+    background-color: #1C1C21;
+    margin: 4px 0;
+    transition: 0.35s;
+  }
+
+  .menu__input:checked ~ .menu {
+    align-items: center;
+    position: relative;
+  }
+
+  .menu__input:checked ~ .menu__list {
+    opacity: 1;
+    display: block;
+    transition: 0.4s;
+  }
+
+  .menu__label {
+    top: 20px;
+    position: relative;
+    z-index: 2;
+    display: block;
+    cursor: pointer;
+  }
+
+  .menu__input:checked ~ .menu__label .bar1 {
+    transform: rotate(45deg) translate(4px, 4px);
+  }
+
+  .menu__input:checked ~ .menu__label .bar2 {
+    opacity: 0;
+  }
+
+  .menu__input:checked ~ .menu__label .bar3 {
+    transform: rotate(-45deg) translate(3px, -3px);
+  }
+}
