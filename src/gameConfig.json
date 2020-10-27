@@ -1,0 +1,138 @@
+{
+  "questions": [
+    {
+      "title": "In the UK, the abbreviation NHS stands for National what Service?",
+      "answer-options": [
+        "Humanity",
+        "Health",
+        "Honour",
+        "Household"
+      ],
+      "correct-answer": [1]
+    },
+    {
+      "title": "Which Disney character famously leaves a glass slipper behind at a royal ball?",
+      "answer-options": [
+        "Pocahontas",
+        "Sleeping Beauty",
+        "Cinderella",
+        "Elsa"
+      ],
+      "correct-answer": [2]
+    },
+    {
+      "title": "What name is given to the revolving belt machinery in an airport that delivers checked luggage from the plane to baggage reclaim?",
+      "answer-options": [
+        "Hangar",
+        "Terminal",
+        "Concourse",
+        "Carousel"
+      ],
+      "correct-answer": [3]
+    },
+    {
+      "title": "Which of these brands was chiefly associated with the manufacture of household locks?",
+      "answer-options": [
+        "Phillips",
+        "Flymo",
+        "Chubb",
+        "Ronseal"
+      ],
+      "correct-answer": [2]
+    },
+    {
+      "title": "The hammer and sickle is one of the most recognisable symbols of which political ideology?",
+      "answer-options": [
+        "Republicanism",
+        "Communism",
+        "Conservatism",
+        "Liberalism"
+      ],
+      "correct-answer": [1]
+    },
+    {
+      "title": "Which toys have been marketed with the phrase “robots in disguise”?",
+      "answer-options": [
+        "Bratz Dolls",
+        "Sylvanian Families",
+        "Hatchimals",
+        "Transformers"
+      ],
+      "correct-answer": [3]
+    },
+    {
+      "title": "What does the word loquacious mean?",
+      "answer-options": [
+        "Angry",
+        "Chatty",
+        "Beautiful",
+        "Shy"
+      ],
+      "correct-answer": [1]
+    },
+    {
+      "title": "Obstetrics is a branch of medicine particularly concerned with what?",
+      "answer-options": [
+        "Childbirth",
+        "Broken bones",
+        "Heart conditions",
+        "Old age"
+      ],
+      "correct-answer": [0]
+    },
+    {
+      "title": "In 1718, which pirate died in battle off the coast of what is now North Carolina?",
+      "answer-options": [
+        "Calico Jack",
+        "Blackbeard",
+        "Bartholomew Roberts",
+        "Captain Kidd"
+      ],
+      "correct-answer": [1]
+    },
+    {
+      "title": "Which of these religious observances lasts for the shortest period of time during the calendar year?",
+      "answer-options": [
+        "Ramadan",
+        "Diwali",
+        "Lent",
+        "Hanukkah"
+      ],
+      "correct-answer": [1]
+    },
+    {
+      "title": "At the closest point, which island group is only 50 miles south-east of the coast of Florida?",
+      "answer-options": [
+        "Bahamas",
+        "US Virgin Islands",
+        "Turks and Caicos Islands",
+        "Bermuda"
+      ],
+      "correct-answer": [0]
+    },
+    {
+      "title": "Construction of which of these famous landmarks was completed first?",
+      "answer-options": [
+        "Empire State Building",
+        "Royal Albert Hall",
+        "Eiffel Tower",
+        "Big Ben Clock Tower"
+      ],
+      "correct-answer": [3]
+    }
+  ],
+  "prizes": [
+    "500",
+    "1000",
+    "2000",
+    "4000",
+    "8000",
+    "16000",
+    "32000",
+    "64000",
+    "125000",
+    "250000",
+    "500000",
+    "1000000"
+  ]
+}

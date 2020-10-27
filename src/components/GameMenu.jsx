@@ -1,37 +1,43 @@
-import React from 'react';
+import React, { memo } from 'react';
+import { useSelector } from 'react-redux';
+import * as selectors from '../store';
 import './GameMenu.css';
+import config from '../gameConfig.json';
 
-export const GameMenu = () => {
+const GameMenu = () => {
+  const currentPrize = useSelector(selectors.getPrize);
 
   return (
-
-      
-    <div className='menu'>
+    <>
       <input
-        type="checkbox"
-        name="menu__input"
-        id="menu__input"
-        class="menu__input"
+        type='checkbox'
+        name='menu__input'
+        id='menu__input'
+        className='menu__input'
       />
-      <label for="menu__input" class="menu__label">
-        <div class="bar1"></div>
-        <div class="bar2"></div>
-        <div class="bar3"></div>
-      </label>
-      <ul className="menu__list">
-        <li className="menu__item">
-          <p className="menu__prize">$1,000,000</p>
-        </li>
-        <li className="menu__item ">
-          <p className="menu__prize">$500,000</p>
-        </li>
-        <li className="menu__item menu__item--active">
-          <p className="menu__prize">$250,000</p>
-        </li>
-        <li className="menu__item menu__item--inactive">
-          <p className="menu__prize">$125,000</p>
-        </li>
-      </ul>
-    </div>
+      <div className='menu'>
+        <label htmlFor='menu__input' className='menu__label'>
+          <div className='bar1'></div>
+          <div className='bar2'></div>
+          <div className='bar3'></div>
+        </label>
+        <ul className='menu__list'>
+          {[...config.prizes].reverse().map(prize => (
+            <li 
+              className={`
+                menu__item 
+                ${prize === currentPrize ? 'menu__item--active' : ''}
+                ${+prize < +currentPrize ? 'menu__item--inactive' : ''}
+              `}
+              key={prize}
+            >
+              <p className='menu__prize'>{prize.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",")}</p>
+            </li>
+          ))}
+        </ul>
+      </div>
+    </>
   )
-}
+};
+
+export default memo(GameMenu);
