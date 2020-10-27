@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/react_millionaire/static/css/main.c61e1338.chunk.css",
+    "main.js": "/react_millionaire/static/js/main.a9ea2921.chunk.js",
+    "main.js.map": "/react_millionaire/static/js/main.a9ea2921.chunk.js.map",
+    "runtime-main.js": "/react_millionaire/static/js/runtime-main.348c0047.js",
+    "runtime-main.js.map": "/react_millionaire/static/js/runtime-main.348c0047.js.map",
+    "static/js/2.109e61d9.chunk.js": "/react_millionaire/static/js/2.109e61d9.chunk.js",
+    "static/js/2.109e61d9.chunk.js.map": "/react_millionaire/static/js/2.109e61d9.chunk.js.map",
+    "index.html": "/react_millionaire/index.html",
+    "precache-manifest.62082996116528080524e47159b53748.js": "/react_millionaire/precache-manifest.62082996116528080524e47159b53748.js",
+    "service-worker.js": "/react_millionaire/service-worker.js",
+    "static/css/main.c61e1338.chunk.css.map": "/react_millionaire/static/css/main.c61e1338.chunk.css.map",
+    "static/js/2.109e61d9.chunk.js.LICENSE.txt": "/react_millionaire/static/js/2.109e61d9.chunk.js.LICENSE.txt",
+    "static/media/logo.png": "/react_millionaire/static/media/logo.7ecf4ccd.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.348c0047.js",
+    "static/js/2.109e61d9.chunk.js",
+    "static/css/main.c61e1338.chunk.css",
+    "static/js/main.a9ea2921.chunk.js"
+  ]
+}
