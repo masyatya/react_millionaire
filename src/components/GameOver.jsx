@@ -25,7 +25,7 @@ export const GameOver = () => {
 
   if(!prize && prize !== 0) {
     history.push('/');
-  }
+  };
 
   return (
     <div className='main over container'>
@@ -40,7 +40,9 @@ export const GameOver = () => {
                 Total score:
               </h2>
               <h1 className="main__heading over__heading">
-                {(prize || prize === 0) && `$${prize.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",")} earned`}
+                {(prize || prize === 0) 
+                  && `
+                    $${prize.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",")} earned`}
               </h1>
             </div>
             <NavLink to='/game' >
@@ -56,4 +58,4 @@ export const GameOver = () => {
       </div>
     </div>
   )
-}
+};

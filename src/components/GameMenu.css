@@ -162,5 +162,4 @@
   .menu__input:checked ~ .menu .menu__label .bar3 {
     transform: rotate(-45deg) translate(6px, -4px);
   }
-
 }

@@ -71,7 +71,9 @@ export const Game = () => {
                     : ''}
                 `}
               >
-                <p className='question__letter'>{String.fromCharCode(65+id)}</p>
+                <p className='question__letter'>
+                  {String.fromCharCode(65+id)}
+                </p>
                 <p className='question__answer-text'>{answer}</p>
               </div>
             </label>
@@ -83,4 +85,4 @@ export const Game = () => {
       />
     </div>
   )
-}
+};
